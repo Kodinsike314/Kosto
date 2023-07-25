@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular&display=swap");
+@font-face {
+  font-family: "Didot";
+  src: url("./font/didot/regular/Didot.eot");
+  src: url("./font/didot/regular/Didot.eot?#iefix") format("embedded-opentype"), url("./font/didot/regular/Didot.woff") format("woff"), url("./font/didot/regular/Didot.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Didot";
+  src: url("./font/didot/bold/Didot-Bold.eot");
+  src: url("./font/didot/bold/Didot-Bold.eot?#iefix") format("embedded-opentype"), url("./font/didot/bold/Didot-Bold.woff") format("woff"), url("./font/didot/bold/Dido-Boldt.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+p {
+  margin: 0;
+}
+
+body {
+  color: #0d0e0e;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+.header__container-inner {
+  display: flex;
+  height: 112px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.nav-link {
+  transition: all 0.4s ease;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-link {
+  color: #0d0e0e;
+  padding: 0.62rem;
+  font-family: Montserrat;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  transition: all 0.4s ease;
+}
+.menu-link:hover {
+  text-shadow: 0 0 1px #0d0e0e;
+}
+.menu-link_active {
+  font-weight: 600;
+  text-shadow: 0 0 1px #0d0e0e;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media only screen and (max-width: 425.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header__burger {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 3.125rem;
+    height: 13px;
+  }
+  .header__burger span {
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, #0d0e0e 0%, rgba(13, 14, 14, 0) 100%);
+    width: 100%;
+    height: 1px;
+    top: 5.5px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .header__burger::after, .header__burger::before {
+    content: "";
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, #0d0e0e 0%, rgba(13, 14, 14, 0) 100%);
+    width: 100%;
+    height: 1px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 7px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 7px;
+  }
+  .header__menu {
+    display: block;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    padding: 120px 0 0 0;
+    transition: all 0.4s ease;
+  }
+  .header__menu.active {
+    top: 0;
+  }
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: radial-gradient(50% 50% at 50% 50%, #0d0e0e 0%, rgba(13, 14, 14, 0) 100%);
+}
+
+.footer__container {
+  display: flex;
+  padding: 1.57356rem 0rem 1.61394rem 0rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background: #211f1a;
+}
+@media screen and (max-width: 360px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+.footer__logo {
+  width: 2rem;
+  height: 2.75rem;
+  color: #fafafa;
+}
+.footer__copyright {
+  margin: 0;
+  color: #fafafa;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3125rem;
+  opacity: 0.75;
+}
+.footer__copyright span {
+  font-family: Poppins;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
+  flex: 1 1 auto;
+}
+
+.price__background {
+  width: 100%;
+  height: 25rem;
+}
+
+.price-bg {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  position: center;
+}
+
+.price__short-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.55rem;
+}
+@media only screen and (max-width: 425.98px) {
+  .price__short-title {
+    font-size: 1rem;
+  }
+}
+.price__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+}
+.price__bl {
+  display: flex;
+  flex-direction: column;
+  gap: 1.94rem;
+}
+@media only screen and (max-width: 425.98px) {
+  .price__bl {
+    align-items: center;
+  }
+}
+.price__btn {
+  cursor: pointer;
+  margin: 0 auto;
+  color: #0d0e0e;
+  padding: 1.25rem 6.25rem;
+  border: 1px solid var(--black, #fafafa);
+  font-weight: 500;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-decoration-line: underline;
+  font-variant: all-small-caps;
+  transition: 0.4s all ease;
+}
+.price__btn:hover {
+  border: 1px solid var(--black, #0d0e0e);
+  background: var(--white, #fafafa);
+}
+
+.bl__title {
+  color: #0d0e0e;
+  font-family: Didot;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.bl-price {
+  color: #0d0e0e;
+  font-family: Didot;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.bl-menu {
+  width: 42.5rem;
+  margin-left: 12.1rem;
+}
+@media only screen and (max-width: 1024.98px) {
+  .bl-menu {
+    margin-left: 5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bl-menu {
+    width: 26.5625rem;
+    margin-left: 1.25rem;
+  }
+}
+@media only screen and (max-width: 425.98px) {
+  .bl-menu {
+    width: 100%;
+  }
+}
+.bl__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 425.98px) {
+  .bl__info {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bl-text {
+    font-size: 1.25rem;
+  }
+}
+.bl-link {
+  text-decoration: none;
+  color: #0d0e0e;
+  transition: all 0.4s ease;
+}
+.bl-link:hover {
+  text-shadow: 0 0 1px #0d0e0e;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: radial-gradient(50% 51.02% at 50% 49.98%, #0d0e0e 0%, rgba(13, 14, 14, 0) 100%);
+}/*# sourceMappingURL=price.css.map */

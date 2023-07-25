@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Didot';
+	src: url('./font/didot/regular/Didot.eot');
+	src: url('./font/didot/regular/Didot.eot?#iefix')
+			format('embedded-opentype'),
+		url('./font/didot/regular/Didot.woff') format('woff'),
+		url('./font/didot/regular/Didot.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Didot';
+	src: url('./font/didot/bold/Didot-Bold.eot');
+	src: url('./font/didot/bold/Didot-Bold.eot?#iefix')
+			format('embedded-opentype'),
+		url('./font/didot/bold/Didot-Bold.woff') format('woff'),
+		url('./font/didot/bold/Dido-Boldt.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:regular&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular&display=swap');

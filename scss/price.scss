@@ -1,0 +1,137 @@
+@import 'global/fonts';
+@import 'global/base';
+@import 'global/header';
+@import 'global/footer';
+
+body,
+html {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 6.25rem;
+	flex: 1 1 auto;
+}
+//bg
+.price__background {
+	width: 100%;
+	height: 25rem;
+}
+.price-bg {
+	width: 100%;
+	height: 25rem;
+	display: flex;
+	position: center;
+}
+
+//price
+
+.price {
+	&__short-title {
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 1.55rem;
+		@media only screen and (max-width: 425.98px) {
+			font-size: 1rem;
+		}
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.56rem;
+	}
+	&__bl {
+		display: flex;
+		flex-direction: column;
+		gap: 1.94rem;
+		@media only screen and (max-width: 425.98px) {
+			align-items: center;
+		}
+	}
+	&__btn {
+		cursor: pointer;
+		margin: 0 auto;
+		color: $black;
+		padding: 1.25rem 6.25rem;
+		border: 1px solid var(--black, $white);
+		font-weight: 500;
+		line-height: 2rem;
+		font-size: 1.5rem;
+		text-decoration-line: underline;
+		font-variant: all-small-caps;
+		transition: 0.4s all ease;
+		&:hover {
+			border: 1px solid var(--black, #0d0e0e);
+			background: var(--white, #fafafa);
+		}
+	}
+}
+
+.bl {
+	&__title {
+		color: $black;
+		font-family: Didot;
+		font-size: 2rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&-price {
+		color: $black;
+		font-family: Didot;
+		font-size: 2rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&-menu {
+		width: 42.5rem;
+		margin-left: 12.1rem;
+		@media only screen and (max-width: 1024.98px) {
+			margin-left: 5rem;
+		}
+		@media only screen and (max-width: 768px) {
+			width: 26.5625rem;
+			margin-left: 1.25rem;
+		}
+		@media only screen and (max-width: 425.98px) {
+			width: 100%;
+		}
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media only screen and (max-width: 425.98px) {
+			flex-direction: column;
+		}
+	}
+	&-text {
+		@media only screen and (max-width: 768px) {
+			font-size: 1.25rem;
+		}
+	}
+	&-link {
+		text-decoration: none;
+		color: $black;
+		transition: all 0.4s ease;
+		&:hover {
+			text-shadow: 0 0 1px $black;
+		}
+	}
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background: radial-gradient(
+		50% 51.02% at 50% 49.98%,
+		#0d0e0e 0%,
+		rgba(13, 14, 14, 0) 100%
+	);
+}

@@ -1,0 +1,28 @@
+$white: #fafafa;
+$gray: #767676;
+$black: #0d0e0e;
+
+p {
+	margin: 0;
+}
+body {
+	color: $black;
+	font-family: Montserrat;
+	font-style: normal;
+	line-height: 2rem;
+	font-weight: 300;
+	font-size: 1.25rem;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 6.25rem;
+}
+
+.header {
+}
+.footer {
+}
+a {
+	cursor: pointer;
+}

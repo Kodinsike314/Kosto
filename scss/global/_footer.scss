@@ -1,0 +1,32 @@
+.footer {
+	&__container {
+		display: flex;
+		padding: 1.57356rem 0rem 1.61394rem 0rem;
+		justify-content: center;
+		align-items: center;
+		gap: 1.25rem;
+		background: #211f1a;
+		@media screen and (max-width: 360px) {
+			flex-direction: column;
+		}
+	}
+	&__logo {
+		width: 2rem;
+		height: 2.75rem;
+		color: $white;
+	}
+	&__copyright {
+		margin: 0;
+		color: $white;
+		text-align: center;
+		font-family: Raleway;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.3125rem;
+		opacity: 0.75;
+		span {
+			font-family: Poppins;
+		}
+	}
+}
